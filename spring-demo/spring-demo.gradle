@@ -2,6 +2,7 @@ plugins {
     id 'java'
 }
 
+description = "My Spring Demo"
 group 'com.jujuxiaer'
 version '5.3.25-SNAPSHOT'
 
