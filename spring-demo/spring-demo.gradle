@@ -12,6 +12,10 @@ repositories {
     maven{ url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
 }
 
+tasks.register('prepareKotlinBuildScriptModel') {
+
+}
+
 dependencies {
     optional(project(":spring-aop"))
     optional(project(":spring-beans"))
