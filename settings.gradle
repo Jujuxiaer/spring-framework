@@ -1,14 +1,16 @@
 pluginManagement {
 	repositories {
-		mavenCentral()
 		gradlePluginPortal()
-		maven { url "https://repo.spring.io/release" }
+		mavenCentral()
+		maven { url "https://repo.spring.io/snapshot" }
+		maven { name "Alibaba" ; url "https://maven.aliyun.com/repository/public" }
+		maven { name "Bstek" ; url "https://nexus.bsdn.org/content/groups/public/" }
 	}
 }
 
 plugins {
 	id "com.gradle.enterprise" version "3.11.1"
-	id "io.spring.ge.conventions" version "0.0.11"
+	id "io.spring.ge.conventions" version "0.0.13"
 }
 
 include "spring-demo"
